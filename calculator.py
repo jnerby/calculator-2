@@ -24,3 +24,9 @@ while True:
         #Add function
         if arith == "+":
             print(add(num1, num2))
+        # Subtract
+        elif arith == "-":
+            print(subtract(num1, num2))
+        # multiply
+        elif arith == "*":
+            print(multiply(num1, num2))
