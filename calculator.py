@@ -40,6 +40,12 @@ while True:
         # square
         elif arith == "square":
             print(square(num1))
-              # cube
+        # cube
         elif arith == "cube":
             print(cube(num1))
+        # power
+        elif arith == "pow":
+            print(power(num1, num2))
+        # mod 
+        elif arith == "mod":
+            print(mod(num1, num2))
