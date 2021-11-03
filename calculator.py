@@ -40,3 +40,6 @@ while True:
         # square
         elif arith == "square":
             print(square(num1))
+              # cube
+        elif arith == "cube":
+            print(cube(num1))
