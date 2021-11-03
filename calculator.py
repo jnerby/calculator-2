@@ -3,5 +3,9 @@
 from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
+# get equation from user
+equation = input("Your equation: ")
 
-# Replace this with your code
+#Tokenize equation
+token = equation.split(" ")
+
