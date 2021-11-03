@@ -13,9 +13,13 @@ while True:
     # Tokenize equation
     token = equation.split(" ")
 
+    # assign variables to tokens and float
     arith = token[0]
     num1 = float(token[1])
-    num2 = float(token[2])
+    
+    # assign variable if token[2] exists
+    if len(token) == 3:
+        num2 = float(token[2])
 
     # Quit if first token is q
     if token[0] == "q":
@@ -30,3 +34,9 @@ while True:
         # multiply
         elif arith == "*":
             print(multiply(num1, num2))
+        # divide
+        elif arith == "/":
+            print(divide(num1, num2))
+        # square
+        elif arith == "square":
+            print(square(num1))
