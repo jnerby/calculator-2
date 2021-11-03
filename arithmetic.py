@@ -7,6 +7,14 @@ def add(num1, num2):
     return sum
 
 
+# def add_list(lst):
+#     """Return the sum of the two inputs."""
+#     sum = 0
+#     for num in lst:
+#         sum += num
+#     return sum
+
+
 def subtract(num1, num2):
     """Return the second number subtracted from the first."""
     diff = num1 - num2

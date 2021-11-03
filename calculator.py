@@ -15,11 +15,20 @@ while True:
 
     # assign variables to tokens and float
     arith = token[0]
-    num1 = float(token[1])
+    if len(token) == 2:
+        num1 = float(token[1])
     
     # assign variable if token[2] exists
     if len(token) == 3:
         num2 = float(token[2])
+
+    # Input Handling
+    # Invalid arithmetic symbol
+    if arith not in ["+", "-", "*", "power", "sqaure", "/", "cube", "mod"]:
+        print ("Invalid Arithmatic")
+
+    
+
 
     # Quit if first token is q
     if token[0] == "q":
