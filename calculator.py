@@ -13,12 +13,18 @@ while True:
     # Tokenize equation
     token = equation.split(" ")
 
+    # Input validation
+    if not token[1].isdigit() or not token[2].isdigit():
+        print ("please enter a number")
+        continue
+    
     # assign variables to tokens and float
     arith = token[0]
+
+    # assign variable if token[1]/token[2] exist
     if len(token) == 2:
         num1 = float(token[1])
-    
-    # assign variable if token[2] exists
+        
     if len(token) == 3:
         num2 = float(token[2])
 
@@ -27,7 +33,7 @@ while True:
     if arith not in ["+", "-", "*", "power", "sqaure", "/", "cube", "mod"]:
         print ("Invalid Arithmatic")
 
-    
+
 
 
     # Quit if first token is q
