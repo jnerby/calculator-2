@@ -14,9 +14,19 @@ while True:
     token = equation.split(" ")
 
     # Input validation
+    #Too few entries
+    if token[0] in ["+", "-", "*", "power", "/", "mod"] and len(token) < 3:
+        print("Enter two numbers.")
+        continue
+
+    # Non-numeric Entries
     if not token[1].isdigit() or not token[2].isdigit():
         print ("please enter a number")
         continue
+
+    # Invalid arithmetic symbol
+    if token[0] not in ["+", "-", "*", "power", "square", "/", "cube", "mod"]:
+        print ("Invalid Arithmatic")  
     
     # assign variables to tokens and float
     arith = token[0]
@@ -27,13 +37,6 @@ while True:
         
     if len(token) == 3:
         num2 = float(token[2])
-
-    # Input Handling
-    # Invalid arithmetic symbol
-    if arith not in ["+", "-", "*", "power", "sqaure", "/", "cube", "mod"]:
-        print ("Invalid Arithmatic")
-
-
 
 
     # Quit if first token is q
